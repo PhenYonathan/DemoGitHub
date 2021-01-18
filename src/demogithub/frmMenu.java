@@ -8,6 +8,7 @@ package demogithub;
 import ClasseMetier.Etudiant;
 import java.util.ArrayList;
 import java.util.Vector;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -66,6 +67,11 @@ public class frmMenu extends javax.swing.JFrame {
             }
         });
         tblEtudiants.setToolTipText("");
+        tblEtudiants.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblEtudiantsMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblEtudiants);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -114,6 +120,13 @@ public class frmMenu extends javax.swing.JFrame {
             dtmEtudiants.addRow(v);
         }
     }//GEN-LAST:event_formWindowOpened
+
+    private void tblEtudiantsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblEtudiantsMouseClicked
+        // TODO add your handling code here:
+        
+        String choix = tblEtudiants.getValueAt(tblEtudiants.getSelectedRow(),1).toString();
+        JOptionPane.showMessageDialog(this, choix);
+    }//GEN-LAST:event_tblEtudiantsMouseClicked
 
     /**
      * @param args the command line arguments
