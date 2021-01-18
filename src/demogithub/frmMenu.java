@@ -5,8 +5,6 @@
  */
 package demogithub;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author pheni
@@ -29,48 +27,21 @@ public class frmMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnDemo = new javax.swing.JButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        btnDemo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
-        btnDemo.setText("Démonstration");
-        btnDemo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDemoMouseClicked(evt);
-            }
-        });
-        btnDemo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDemoActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnDemo, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnDemo, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnDemoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDemoActionPerformed
-        // TODO add your handling code here:
-        int nb = 17;
-        JOptionPane.showMessageDialog(this, "la valeur de nb est : " + nb);
-        int nb2 = 15;
-        JOptionPane.showMessageDialog(this, "la valeur de nb2 est : " + nb2);
-    }//GEN-LAST:event_btnDemoActionPerformed
-
-    private void btnDemoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDemoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDemoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -108,6 +79,5 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDemo;
     // End of variables declaration//GEN-END:variables
 }
